@@ -24,3 +24,42 @@ To visualize the difference think of it as the internet is a network of many com
 port is fixed as HTTP uses port 80 to communicate and also the data which is sent is HTML, CSS, and JavaScript. So if you want a feel of internet application make a socket 
 connection at a random port and send data to another computer via the socket. So in this case you are using the internet for communication and not the web.
 
+Networking Devices:
+1) Repeaters:(at physical Layer)
+  ->Physical Layer
+  ->2-port device
+  ->Forwarding of the incoming signal
+  ->NO-filtering of the signal, because it is purely hardware.
+  ->Collision is possible here, maximum 'n' collisions are possible.
+
+2)Hub:(at physical layer)
+  ->Multi-port repeater, in which multiple ports are available with some extra functionality to detect some error happenning.
+  ->Forwarding, similar as repeater
+  ->No - filtering: since it is purely hardware , no filtering is there , it broadcast the signal to each devices connected to it.
+  ->high traffic is there , high collision is also there.
+
+3)Bridges:(Used at physical layer and data link layer , Layer 2 device , )
+  ->2 -port device.
+  ->used to connect two different LANs.
+  ->Forwarding of the signal is there, and it can be done in two ways :
+    ->1) static bridge:
+        ->A table is maintained which stores the MAC address of all the devices as well there port no., and administrator have to 
+          update this manually, so this is not the efficient way.
+      2) Transparent Bridge:
+        ->Initially bridge do not contain any info, once it recieves any packet it broadcast it to every device and based on that it maintains the table .
+  ->Filtering is there in the bridges, they are used at the DDL so they MAC address for that.
+  ->No - collision or less collision is there, because bridges uses the buffer, to store and forward the packet , this minimises the collision.
+  ->Bridge Data unit protocol: it is used to make spanning tree so that packet cannot be in infinite loop.
+
+4)Switch:(Layer 2 device,data link layer) 
+-> Multiport bridge
+->Full duplex , so that no collision is there.
+->A separate circuit is formed when a device is sending the packet to another device, so collison is minimised.
+
+5)Router: (Layer 3 , Network Layer )
+  ->IP address is used for forwarding a packect; and routers using the routing table for that.
+  ->filtering :  filtering is done if we want to know the MAC address, we send ARP rerquest to the router , 
+  -> No collision is there , because it also used the store and forward method.
+
+
+
