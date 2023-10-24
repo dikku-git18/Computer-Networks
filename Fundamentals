@@ -1,0 +1,26 @@
+What is Computer Networking?
+Computer networking refers to connected computing devices (such as laptops, desktops, servers, smartphones, and tablets) and an ever-expanding array of IoT devices 
+(such as cameras, door locks, doorbells, refrigerators, audio/visual systems, thermostats, and various sensors) that communicate with one another.
+Computer Network means an interconnection of autonomous (standalone) computers for information exchange.
+
+BASIC TERMS:
+Client: A client is a computer hardware device or software that accesses a service made available by a server. The server is often (but not always) located on a 
+separate physical computer.
+
+Server: A server is a physical computer dedicated to run services to serve the needs of other computers. Depending on the servicethat is running, it could be a file 
+server, database server, home media server, print server, or web server.
+
+Host: A host is a computer, connected to other computers for which it provides data or services over a network. In theory, every computer connected to a network acts 
+as a host to other peers on the network. In essence, a host reflects the logical relationship of two or more computers on a network.
+A host must have an assigned IP address.
+
+What is difference between the Internet and the Web?
+The Internet is a global network of networks while the Web, also referred to formally as World Wide Web (www) is a collection of information that is accessed via the Internet. 
+Another way to look at this difference is; the Internet is infrastructure while the Web is served on top of that infrastructure. Alternatively, the Internet can be viewed as a 
+big book store while the Web can be viewed as a collection of books on that store. At a high level, we can even think of the Internet as hardware and the Web as software!
+
+Web applications use HTTP protocol which is a layer over TCP protocol. Whereas internet applications can use either TCP or UDP protocol.
+To visualize the difference think of it as the internet is a network of many computers connected together so you can use any port say 90 to send or receive data whereas in web 
+port is fixed as HTTP uses port 80 to communicate and also the data which is sent is HTML, CSS, and JavaScript. So if you want a feel of internet application make a socket 
+connection at a random port and send data to another computer via the socket. So in this case you are using the internet for communication and not the web.
+
