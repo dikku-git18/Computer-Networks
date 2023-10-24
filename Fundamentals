@@ -15,14 +15,15 @@ as a host to other peers on the network. In essence, a host reflects the logical
 A host must have an assigned IP address.
 
 What is difference between the Internet and the Web?
-The Internet is a global network of networks while the Web, also referred to formally as World Wide Web (www) is a collection of information that is accessed via the Internet. 
-Another way to look at this difference is; the Internet is infrastructure while the Web is served on top of that infrastructure. Alternatively, the Internet can be viewed as a 
-big book store while the Web can be viewed as a collection of books on that store. At a high level, we can even think of the Internet as hardware and the Web as software!
+The Internet is a global network of networks while the Web, also referred to formally as World Wide Web (www) is a collection of information that is accessed via the 
+Internet. Another way to look at this difference is; the Internet is infrastructure while the Web is served on top of that infrastructure. Alternatively, the Internet
+can be viewed as a big book store while the Web can be viewed as a collection of books on that store. At a high level, we can even think of the Internet as hardware
+and the Web as software!
 
 Web applications use HTTP protocol which is a layer over TCP protocol. Whereas internet applications can use either TCP or UDP protocol.
-To visualize the difference think of it as the internet is a network of many computers connected together so you can use any port say 90 to send or receive data whereas in web 
-port is fixed as HTTP uses port 80 to communicate and also the data which is sent is HTML, CSS, and JavaScript. So if you want a feel of internet application make a socket 
-connection at a random port and send data to another computer via the socket. So in this case you are using the internet for communication and not the web.
+To visualize the difference think of it as the internet is a network of many computers connected together so you can use any port say 90 to send or receive data whereas 
+in web port is fixed as HTTP uses port 80 to communicate and also the data which is sent is HTML, CSS, and JavaScript. So if you want a feel of internet application make
+a socket connection at a random port and send data to another computer via the socket. So in this case you are using the internet for communication and not the web.
 
 Networking Devices:
 1) Repeaters:(at physical Layer)
@@ -60,6 +61,20 @@ Networking Devices:
   ->IP address is used for forwarding a packect; and routers using the routing table for that.
   ->filtering :  filtering is done if we want to know the MAC address, we send ARP rerquest to the router , 
   -> No collision is there , because it also used the store and forward method.
+
+LAN(Local Area Network):
+  LAN stands for local area network. It is a group of network devices that allow communication between various connected devices. Private ownership has
+  control over the local area network rather than the public. LAN has a short propagation delay than MAN as well as WAN. It covers smaller areas such as 
+  colleges, schools, hospitals, and so on. 
+MAN (metropolitan area Network):
+  MAN stands for metropolitan area network. It covers a larger area than LAN such as small towns, cities, etc. MAN connects two or more computers that 
+  reside within the same or completely different cities. MAN is expensive and should or might not be owned by one organization. 
+WAN (wide area Network):
+  WAN stands for wide area network. It covers a large area than LAN as well as a MAN such as country/continent etc. WAN is expensive and should or might
+  not be owned by one organization. PSTN or satellite medium is used for wide area networks.
+
+
+  
 
 
 
