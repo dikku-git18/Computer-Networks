@@ -1,0 +1,97 @@
+What is OSI Model?
+OSI stands for Open Systems Interconnection. It was developed by ISO – ‘International Organization for Standardization’, in the year 1984. It is a 7-layer architecture
+with each layer having specific functionality to perform. All these 7 layers work collaboratively to transmit the data from one person to another across the globe.
+
+
+Physical Layer – Layer 1
+  The lowest layer of the OSI reference model is the physical layer. It is responsible for the actual physical connection between the devices. 
+  The physical layer contains information in the form of bits. It is responsible for transmitting individual bits from one node to the next. 
+  When receiving data, this layer will get the signal received and convert it into 0s and 1s and send them to the Data Link layer, 
+  which will put the frame back together.
+  At the physical layer, one might find “physical” resources such as network hubs, cabling, repeaters, network adapters or modems.
+
+Functions of the Physical Layer:
+Bit synchronization: The physical layer provides the synchronization of the bits by providing a clock. This clock controls both sender and receiver thus
+providing synchronization at the bit level.
+Bit rate control: The Physical layer also defines the transmission rate i.e. the number of bits sent per second.
+Physical topologies: Physical layer specifies how the different, devices/nodes are arranged in a network i.e. bus, star, or mesh topology.
+Transmission mode: Physical layer also defines how the data flows between the two connected devices. The various transmission modes possible are Simplex, 
+half-duplex and full-duplex.
+
+
+Data Link Layer (DLL) – Layer 2
+The data link layer is responsible for the node-to-node delivery of the message. The main function of this layer is to make sure data transfer is error-free
+from one node to another, over the physical layer. When a packet arrives in a network, it is the responsibility of the DLL to transmit it to the Host using its 
+MAC address. 
+The Data Link Layer is divided into two sublayers:  
+
+Logical Link Control (LLC)
+Media Access Control (MAC)
+The packet received from the Network layer is further divided into frames depending on the frame size of the NIC(Network Interface Card). DLL also encapsulates 
+Sender and Receiver’s MAC address in the header. 
+
+The Receiver’s MAC address is obtained by placing an ARP(Address Resolution Protocol) request onto the wire asking “Who has that IP address?” and the destination
+host will reply with its MAC address. 
+
+Functions of the Data Link Layer
+Framing: Framing is a function of the data link layer. It provides a way for a sender to transmit a set of bits that are meaningful to the receiver. This can be 
+accomplished by attaching special bit patterns to the beginning and end of the frame.
+Physical addressing: After creating frames, the Data link layer adds physical addresses (MAC addresses) of the sender and/or receiver in the header of each frame.
+Error control: The data link layer provides the mechanism of error control in which it detects and retransmits damaged or lost frames.
+Flow Control: The data rate must be constant on both sides else the data may get corrupted thus, flow control coordinates the amount of data that can be sent 
+before receiving an acknowledgment.
+Access control: When a single communication channel is shared by multiple devices, the MAC sub-layer of the data link layer helps to determine which device has 
+control over the channel at a given time.
+
+
+Network Layer - Layer 3
+The network layer is responsible for receiving frames from the data link layer, and delivering them to their intended destinations among based on the addresses
+contained inside the frame. The network layer finds the destination by using logical addresses, such as IP (internet protocol). At this layer, routers are a crucial
+component used to quite literally route information where it needs to go between networks.
+
+Functions of the Network Layer 
+Routing: The network layer protocols determine which route is suitable from source to destination. This function of the network layer is known as routing.
+Logical Addressing: To identify each device on Internetwork uniquely, the network layer defines an addressing scheme. The sender & receiver’s IP addresses 
+are placed in the header by the network layer. Such an address distinguishes each device uniquely and universally.
+
+
+Transport Layer – Layer 4
+The transport layer manages the delivery and error checking of data packets. It regulates the size, sequencing, and ultimately the transfer of data between systems 
+and hosts. One of the most common examples of the transport layer is TCP or the Transmission Control Protocol.
+
+Functions of the Transport Layer 
+Segmentation and Reassembly: This layer accepts the message from the (session) layer, and breaks the message into smaller units. Each of the segments produced has
+a header associated with it. The transport layer at the destination station reassembles the message.
+Service Point Addressing: To deliver the message to the correct process, the transport layer header includes a type of address called service point address or port
+address. Thus by specifying this address, the transport layer makes sure that the message is delivered to the correct process.
+
+Session Layer – Layer 5
+The session layer controls the conversations between different computers. A session or connection between machines is set up, managed, and termined at layer 5. 
+Session layer services also include authentication and reconnections.
+
+Functions of the Session Layer
+Session establishment, maintenance, and termination: The layer allows the two processes to establish, use and terminate a connection.
+Synchronization: This layer allows a process to add checkpoints that are considered synchronization points in the data. These synchronization points help to
+identify the error so that the data is re-synchronized properly, and ends of the messages are not cut prematurely and data loss is avoided.
+Dialog Controller: The session layer allows two systems to start communication with each other in half-duplex or full-duplex.
+
+
+Presentation Layer – Layer 6
+The presentation layer formats or translates data for the application layer based on the syntax or semantics that the application accepts. Because of this, 
+it at times also called the syntax layer. This layer can also handle the encryption and decryption required by the application layer.
+
+Functions of the Presentation Layer
+Translation: For example, ASCII to EBCDIC.
+Encryption/ Decryption: Data encryption translates the data into another form or code. The encrypted data is known as the ciphertext and the decrypted data 
+is known as plain text. A key value is used for encrypting as well as decrypting data.
+Compression: Reduces the number of bits that need to be transmitted on the network.
+
+
+Application Layer – Layer 7
+At this layer, both the end user and the application layer interact directly with the software application. This layer sees network services provided to
+end-user applications such as a web browser or Office 365. The application layer identifies communication partners, resource availability, and synchronizes communication.
+
+
+
+
+
